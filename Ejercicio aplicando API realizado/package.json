@@ -1,0 +1,34 @@
+{
+  "name": "ejercicio-crud-fullstack",
+  "version": "1.0.0",
+  "description": "Sistema CRUD completo con Express.js backend y React frontend",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "backend-prod": "cd backend && npm start",
+    "frontend-build": "cd frontend && npm run build",
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "express",
+    "react", 
+    "crud",
+    "jwt",
+    "authentication",
+    "nodejs",
+    "fullstack"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "optionalDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

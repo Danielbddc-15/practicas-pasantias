@@ -1,0 +1,91 @@
+/* Importar Bootstrap CSS */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Importar Font Awesome */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Estilos personalizados */
+.App {
+  min-height: 100vh;
+}
+
+/* Mejorar el aspecto de las cards */
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para botones */
+.btn {
+  transition: all 0.15s ease-in-out;
+}
+
+/* Animaciones para las alertas */
+.alert {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para el spinner de carga */
+.spinner-border {
+  animation: spinner-border 0.75s linear infinite;
+}
+
+/* Mejorar el aspecto de la paginación */
+.pagination .page-link {
+  border: none;
+  margin: 0 2px;
+  border-radius: 0.25rem;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Estilos para las tareas completadas */
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+/* Responsive mejoras */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+}
